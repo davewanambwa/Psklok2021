@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ke.co.corellia.psklok">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Camera"  android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".webwallet"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".walletshareb"
+            android:label="@string/title_activity_walletshareb"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".forgot"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".webcam"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mypoints"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mydelivery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".packagedetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myprof"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sharepromo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ratehim"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".support"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".triphistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".walletwithme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".uploadz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".recepiant"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".insurancec"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Insuranceb"
+            android:label="@string/title_activity_insuranceb"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".uploady"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".uploadx"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".uploader"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".insurancechooser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main3Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".rideselect"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".walletcontact"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Walletshare"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pictureupload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".packaagechooser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ridechooser"
+            android:noHistory="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splashscreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wallet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaymentDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Logup"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MainActivity"
+            android:noHistory="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

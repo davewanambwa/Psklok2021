@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <!--
+                Add menu items here
+                Menu items with icon and Title
+        -->
+        <item
+
+            android:id="@+id/Myprofile"
+            android:icon="@drawable/mprofile"
+
+            android:title="My Profile" />
+        <item
+            android:id="@+id/triphistory"
+            android:icon="@drawable/bikeo"
+            android:title="Trip History" />
+
+        <item
+            android:id="@+id/wallet"
+            android:icon="@drawable/mwallet"
+            android:title="Share Wallet" />
+        <item
+            android:id="@+id/sharedwithme"
+            android:icon="@drawable/mwallet"
+            android:title="Wallet shared with me" />
+        <item
+            android:id="@+id/mybox"
+            android:icon="@drawable/menvelope"
+            android:title="My packages" />
+
+
+
+        <item
+        android:id="@+id/sharecode"
+        android:icon="@drawable/profile"
+        android:title="Invite Friends" />
+
+        <item
+            android:id="@+id/onpoint"
+            android:icon="@drawable/profile"
+            android:title="Points Earned" />
+
+
+
+
+        <item
+            android:id="@+id/loff"
+            android:icon="@drawable/profile"
+            android:title="Log Off" />
+        <item
+            android:id="@+id/ex"
+            android:icon="@drawable/profile"
+            android:title="Exit" />
+
+    </group>
+
+</menu>

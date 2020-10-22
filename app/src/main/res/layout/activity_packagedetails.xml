@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".packagedetails">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BOX LOCK PASSWORD"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:background="@drawable/brectangle_3_shape"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textAlignment="center"
+        android:id="@+id/txcode"
+        android:textSize="18dp"
+        android:background="@drawable/brectangle_4_shape"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/img"
+
+            android:layout_height="180dp">
+
+        </ImageView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btncam"
+            android:text="TAKE PICTURE OF ITEM" >
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

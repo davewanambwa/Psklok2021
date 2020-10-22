@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/brectangle_2_shape"
+    android:orientation="vertical"
+    android:padding="16dp"
+
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="90dp"
+
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ltconfirm"
+
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PICK UP/ DROP OFF DETAILS"
+            android:textSize="19sp"
+            android:textAlignment="center">
+
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+
+        <fragment android:id="@+id/autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            />
+
+        <fragment android:id="@+id/autocomplete_fragment2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content" android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="OK CONFIRM."
+
+                android:id="@+id/btnokestimate"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+
+
+
+                android:background="@drawable/betterbutton"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="CANCEL"
+                android:id="@+id/btncancelselect"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+
+
+
+                android:background="@drawable/betterbutton"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ltdriverfind"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="19sp"
+            android:textAlignment="center"
+            android:text="TRIP PROGRESS">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="19sp"
+            android:textAlignment="center"
+            android:id="@+id/myridertxt"
+            android:text="FINDING YOUR RIDER..">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal"
+
+            android:orientation="horizontal">
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:progressDrawable="@drawable/circular_progress_bar"
+
+             />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/foundride"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JOHN | KCN 249Y"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/txtdrivers"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnokdriver"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/yellowbg"
+                    android:drawableLeft="@drawable/iconfinder_phone_"
+                    android:padding="10dp"
+                    android:text="Call" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_material_face"
+                    android:layout_marginRight="5dp"
+
+                    android:layout_weight="1"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:id="@+id/txtrating"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="2"
+
+                    android:background="@drawable/yellowbg"
+                    android:enabled="false"
+
+                    android:padding="14dp"
+                    android:text="RATING 3.6"
+                    android:textAlignment="center"
+                    android:textColor="#070707" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content" android:orientation="vertical"
+            android:gravity="center">
+            <Button
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+
+                android:background="@drawable/betterbutton"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:textSize="17sp"
+                android:id="@+id/btntrip"
+                android:text="TRIP INFO"
+                />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/btncancelride"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+
+                android:background="@drawable/betterbutton"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:textSize="17sp"
+
+                android:text="CANCEL REQUEST"
+                />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ltestimate"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="29sp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:text="ESTIMATE">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:textSize="16dp"
+                android:text="COST : "/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:id="@+id/ecost"
+                android:layout_height="wrap_content"
+                android:text="200-300"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:text="DISTANCE (KMS) : "/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="17dp"
+                android:id="@+id/txtedistance"
+                android:layout_height="wrap_content"
+                android:text="34"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:text="WALLET BALANCE : "/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="17dp"
+                android:id="@+id/txtewallet"
+                android:layout_height="wrap_content"
+                android:text="00"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content" android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="OK, CONFIRM."
+
+                android:id="@+id/btnokconfirm"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+
+                android:background="@drawable/betterbutton"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:layout_marginLeft="10dp"
+                android:shadowRadius="5"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="CANCEL"
+                android:id="@+id/btncancelreq"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="10dp"
+                android:textSize="17sp"
+
+
+
+                android:background="@drawable/betterbutton"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ltrideon"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="29sp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:text="TRIP HAS STARTED">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

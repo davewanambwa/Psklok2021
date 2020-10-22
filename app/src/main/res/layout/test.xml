@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ltdriverfind"
+
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="19sp"
+            android:textAlignment="center"
+            android:text="TRIP PROGRESS">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="19sp"
+            android:textAlignment="center"
+            android:id="@+id/myridertxt"
+            android:text="FINDING YOUR RIDER..">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content" android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="CALL DRIVER"
+                android:enabled="false"
+
+                android:id="@+id/btnokdriver"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+
+
+
+                android:background="@drawable/betterbutton"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="CANCEL"
+                android:id="@+id/btncancelride"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="10dp"
+                android:textSize="17sp"
+
+
+
+                android:background="@drawable/betterbutton"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"/>
+        </LinearLayout>
+    </LinearLayout>
+
+

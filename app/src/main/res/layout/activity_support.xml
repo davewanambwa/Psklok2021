@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/gradient"
+
+    tools:context=".support">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:alpha="0.8"
+        android:padding="10dp"
+        android:background="@drawable/brectangle_3_shape"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logonamewhitewords__ek1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Describe Issue Below"/>
+        <EditText
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="  "
+            android:id="@+id/reqdesc"
+            android:layout_width="fill_parent"
+            android:layout_height="110dp"
+            android:hint="   Enter your request here"
+            android:textSize="18sp"
+            android:background="@drawable/brectangle_3_shape"
+            android:gravity="top|left"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/post"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="25dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:id="@+id/btncancel"
+
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+
+
+
+                android:background="@drawable/betterbutton"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_marginLeft="10dp"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Report"
+                android:id="@+id/btnconfirm"
+
+
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+
+
+
+                android:background="@drawable/betterbutton"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>
