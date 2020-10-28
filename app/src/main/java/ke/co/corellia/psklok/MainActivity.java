@@ -1240,7 +1240,7 @@ autocompleteFragment2.setCountry(CountryCode);
 
             RequestBody body = RequestBody.create(json, JSON); // new
             // RequestBody body = RequestBody.create(JSON, json); // old
-            String url = "https://corellia.co.ke/rider/two.php?action=getuserid2";
+            String url = "https://www.psklok.com/klok/two.php?action=getuserid2";
             Request request = new Request.Builder()
                     .url(url)
                     .post(body)
@@ -1248,7 +1248,7 @@ autocompleteFragment2.setCountry(CountryCode);
 
             // String ridu = URLEncoder.encode(rid,"utf-8");
 
-            // String url=  "https://corellia.co.ke/rider/one.php?action=getdr";
+            // String url=  "https://www.psklok.com/klok/one.php?action=getdr";
 
 
             // okhttp3.Request request = new okhttp3.Request.Builder().get().url(url).build();
@@ -1430,7 +1430,7 @@ autocompleteFragment2.setCountry(CountryCode);
 
             RequestBody body = RequestBody.create(json, JSON); // new
             // RequestBody body = RequestBody.create(JSON, json); // old
-            String url = "https://corellia.co.ke/rider/two.php?action=getfare";
+            String url = "https://www.psklok.com/klok/two.php?action=getfare";
             Request request = new Request.Builder()
                     .url(url)
                     .post(body)
@@ -1438,7 +1438,7 @@ autocompleteFragment2.setCountry(CountryCode);
 
             // String ridu = URLEncoder.encode(rid,"utf-8");
 
-            // String url=  "https://corellia.co.ke/rider/one.php?action=getdr";
+            // String url=  "https://www.psklok.com/klok/one.php?action=getdr";
 
 
             // okhttp3.Request request = new okhttp3.Request.Builder().get().url(url).build();
@@ -1604,7 +1604,7 @@ autocompleteFragment2.setCountry(CountryCode);
 
             RequestBody body = RequestBody.create(json, JSON); // new
             // RequestBody body = RequestBody.create(JSON, json); // old
-            String url = "https://corellia.co.ke/rider/two.php?action=ride";
+            String url = "https://www.psklok.com/klok/two.php?action=ride";
             Request request = new Request.Builder()
                     .url(url)
                     .post(body)
@@ -1612,7 +1612,7 @@ autocompleteFragment2.setCountry(CountryCode);
 
             // String ridu = URLEncoder.encode(rid,"utf-8");
 
-            // String url=  "https://corellia.co.ke/rider/one.php?action=getdr";
+            // String url=  "https://www.psklok.com/klok/one.php?action=getdr";
 
 
             // okhttp3.Request request = new okhttp3.Request.Builder().get().url(url).build();
@@ -1829,7 +1829,7 @@ autocompleteFragment2.setCountry(CountryCode);
 
             RequestBody body = RequestBody.create(json, JSON); // new
             // RequestBody body = RequestBody.create(JSON, json); // old
-            String url = "https://corellia.co.ke/rider/two.php?action=getridestate";
+            String url = "https://www.psklok.com/klok/two.php?action=getridestate";
             Request request = new Request.Builder()
                     .url(url)
                     .post(body)
@@ -1837,7 +1837,7 @@ autocompleteFragment2.setCountry(CountryCode);
 
             // String ridu = URLEncoder.encode(rid,"utf-8");
 
-            // String url=  "https://corellia.co.ke/rider/one.php?action=getdr";
+            // String url=  "https://www.psklok.com/klok/one.php?action=getdr";
 
 
             // okhttp3.Request request = new okhttp3.Request.Builder().get().url(url).build();
@@ -1951,7 +1951,7 @@ autocompleteFragment2.setCountry(CountryCode);
 
             RequestBody body = RequestBody.create(json, JSON); // new
             // RequestBody body = RequestBody.create(JSON, json); // old
-            String url = "https://corellia.co.ke/rider/two.php?action=cancelride";
+            String url = "https://www.psklok.com/klok/two.php?action=cancelride";
             Request request = new Request.Builder()
                     .url(url)
                     .post(body)
@@ -1959,7 +1959,7 @@ autocompleteFragment2.setCountry(CountryCode);
 
             // String ridu = URLEncoder.encode(rid,"utf-8");
 
-            // String url=  "https://corellia.co.ke/rider/one.php?action=getdr";
+            // String url=  "https://www.psklok.com/klok/one.php?action=getdr";
 
 
             // okhttp3.Request request = new okhttp3.Request.Builder().get().url(url).build();
@@ -2129,7 +2129,7 @@ autocompleteFragment2.setCountry(CountryCode);
 
             RequestBody body = RequestBody.create(json, JSON); // new
             // RequestBody body = RequestBody.create(JSON, json); // old
-            String url = "https://corellia.co.ke/rider/two.php?action=mybox&d=" + cid;
+            String url = "https://www.psklok.com/klok/two.php?action=mybox&d=" + cid;
             Request request = new Request.Builder()
                     .url(url)
                     .post(body)
@@ -2137,7 +2137,7 @@ autocompleteFragment2.setCountry(CountryCode);
 
             // String ridu = URLEncoder.encode(rid,"utf-8");
 
-            // String url=  "https://corellia.co.ke/rider/one.php?action=getdr";
+            // String url=  "https://www.psklok.com/klok/one.php?action=getdr";
 
 
             // okhttp3.Request request = new okhttp3.Request.Builder().get().url(url).build();
@@ -2253,7 +2253,7 @@ autocompleteFragment2.setCountry(CountryCode);
 
             RequestBody body = RequestBody.create(json, JSON); // new
             // RequestBody body = RequestBody.create(JSON, json); // old
-            String url = "https://corellia.co.ke/rider/two.php?action=cancelreq&d=" + cid;
+            String url = "https://www.psklok.com/klok/two.php?action=cancelreq&d=" + cid;
             Request request = new Request.Builder()
                     .url(url)
                     .post(body)
@@ -2261,7 +2261,7 @@ autocompleteFragment2.setCountry(CountryCode);
 
             // String ridu = URLEncoder.encode(rid,"utf-8");
 
-            // String url=  "https://corellia.co.ke/rider/one.php?action=getdr";
+            // String url=  "https://www.psklok.com/klok/one.php?action=getdr";
 
 
             // okhttp3.Request request = new okhttp3.Request.Builder().get().url(url).build();

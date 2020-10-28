@@ -99,7 +99,7 @@ public class Walletshare extends AppCompatActivity  {
                 android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(context);
 
                 builder.setTitle("Please confirm wallet remove");
-                builder.setMessage("Are you want to stop sharing yor wallet with "+u+"?");
+                builder.setMessage("Are you sure you want to stop sharing yor wallet with "+u+"?");
                 builder.setCancelable(true);
 
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
@@ -206,7 +206,7 @@ public class Walletshare extends AppCompatActivity  {
                 android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(this);
 
                 builder.setTitle("Please confirm wallet share");
-                builder.setMessage("Are you want to share with "+number2+" ("+number+")?");
+                builder.setMessage("Are you sure you want to share with "+number2+" ("+number+")?");
                 builder.setCancelable(true);
 
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
@@ -348,7 +348,7 @@ public class Walletshare extends AppCompatActivity  {
 
             RequestBody body = RequestBody.create(json, JSON); // new
             // RequestBody body = RequestBody.create(JSON, json); // old
-            String url="https://corellia.co.ke/rider/two.php?action=mywallet&d="+cid;
+            String url="https://www.psklok.com/klok/two.php?action=mywallet&d="+cid;
             Request request = new Request.Builder()
                     .url(url)
                     .post(body)
@@ -356,7 +356,7 @@ public class Walletshare extends AppCompatActivity  {
 
             // String ridu = URLEncoder.encode(rid,"utf-8");
 
-            // String url=  "https://corellia.co.ke/rider/one.php?action=getdr";
+            // String url=  "https://www.psklok.com/klok/one.php?action=getdr";
 
 
 
@@ -477,7 +477,7 @@ public class Walletshare extends AppCompatActivity  {
 
             RequestBody body = RequestBody.create(json, JSON); // new
             // RequestBody body = RequestBody.create(JSON, json); // old
-            String url="https://corellia.co.ke/rider/two.php?action=mywalletadd";
+            String url="https://www.psklok.com/klok/two.php?action=mywalletadd";
             Request request = new Request.Builder()
                     .url(url)
                     .post(body)
@@ -485,7 +485,7 @@ public class Walletshare extends AppCompatActivity  {
 
             // String ridu = URLEncoder.encode(rid,"utf-8");
 
-            // String url=  "https://corellia.co.ke/rider/one.php?action=getdr";
+            // String url=  "https://www.psklok.com/klok/one.php?action=getdr";
 
 
 
@@ -606,7 +606,7 @@ public class Walletshare extends AppCompatActivity  {
 
             RequestBody body = RequestBody.create(json, JSON); // new
             // RequestBody body = RequestBody.create(JSON, json); // old
-            String url="https://corellia.co.ke/rider/two.php?action=mywalletrem";
+            String url="https://www.psklok.com/klok/two.php?action=mywalletrem";
             Request request = new Request.Builder()
                     .url(url)
                     .post(body)
@@ -614,7 +614,7 @@ public class Walletshare extends AppCompatActivity  {
 
             // String ridu = URLEncoder.encode(rid,"utf-8");
 
-            // String url=  "https://corellia.co.ke/rider/one.php?action=getdr";
+            // String url=  "https://www.psklok.com/klok/one.php?action=getdr";
 
 
 

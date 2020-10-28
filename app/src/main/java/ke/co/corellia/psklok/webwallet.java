@@ -19,14 +19,14 @@ public class webwallet extends AppCompatActivity {
 
         WebView myWebView = (WebView) findViewById(R.id.webview);
         myWebView.setWebViewClient(new MyWebViewClient());
-       // myWebView.loadUrl("https://corellia.co.ke/rider/pay.php");
+       // myWebView.loadUrl("https://www.psklok.com/klok/pay.php");
 
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
         LazyInitializedSingletonExample instance1 = LazyInitializedSingletonExample.getInstance();
 
-        myWebView.loadUrl("https://corellia.co.ke/rider/pay.php?id="+instance1.getCustomerid()+"&amount="+instance1.getTopamount());
+        myWebView.loadUrl("https://www.psklok.com/klok/pay.php?id="+instance1.getCustomerid()+"&amount="+instance1.getTopamount());
 
 
     }

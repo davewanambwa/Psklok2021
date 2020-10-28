@@ -328,7 +328,7 @@ cadd myTask = new cadd(number.toString().toUpperCase());
 
             RequestBody body = RequestBody.create(json, JSON); // new
             // RequestBody body = RequestBody.create(JSON, json); // old
-            String url="https://corellia.co.ke/rider/two.php?action=checkno&d="+cid;
+            String url="https://www.psklok.com/klok/two.php?action=checkno&d="+cid;
             Request request = new Request.Builder()
                     .url(url)
                     .post(body)
@@ -336,7 +336,7 @@ cadd myTask = new cadd(number.toString().toUpperCase());
 
             // String ridu = URLEncoder.encode(rid,"utf-8");
 
-            // String url=  "https://corellia.co.ke/rider/one.php?action=getdr";
+            // String url=  "https://www.psklok.com/klok/one.php?action=getdr";
 
 
 

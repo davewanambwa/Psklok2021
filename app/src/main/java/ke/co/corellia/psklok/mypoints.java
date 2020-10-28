@@ -131,7 +131,7 @@ public class mypoints extends AppCompatActivity {
 
             RequestBody body = RequestBody.create(json, JSON); // new
             // RequestBody body = RequestBody.create(JSON, json); // old
-            String url = "https://corellia.co.ke/rider/two.php?action=mypoints";
+            String url = "https://www.psklok.com/klok/two.php?action=mypoints";
             Request request = new Request.Builder()
                     .url(url)
                     .post(body)
@@ -139,7 +139,7 @@ public class mypoints extends AppCompatActivity {
 
             // String ridu = URLEncoder.encode(rid,"utf-8");
 
-            // String url=  "https://corellia.co.ke/rider/one.php?action=getdr";
+            // String url=  "https://www.psklok.com/klok/one.php?action=getdr";
 
 
             // okhttp3.Request request = new okhttp3.Request.Builder().get().url(url).build();

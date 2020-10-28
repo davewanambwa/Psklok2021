@@ -331,7 +331,7 @@ public class walletwithme extends AppCompatActivity {
 
             RequestBody body = RequestBody.create(json, JSON); // new
             // RequestBody body = RequestBody.create(JSON, json); // old
-            String url="https://corellia.co.ke/rider/two.php?action=walletwithme&d="+cid;
+            String url="https://www.psklok.com/klok/two.php?action=walletwithme&d="+cid;
             Request request = new Request.Builder()
                     .url(url)
                     .post(body)
@@ -339,7 +339,7 @@ public class walletwithme extends AppCompatActivity {
 
             // String ridu = URLEncoder.encode(rid,"utf-8");
 
-            // String url=  "https://corellia.co.ke/rider/one.php?action=getdr";
+            // String url=  "https://www.psklok.com/klok/one.php?action=getdr";
 
 
 
@@ -460,7 +460,7 @@ public class walletwithme extends AppCompatActivity {
 
             RequestBody body = RequestBody.create(json, JSON); // new
             // RequestBody body = RequestBody.create(JSON, json); // old
-            String url="https://corellia.co.ke/rider/two.php?action=mywalletadd";
+            String url="https://www.psklok.com/klok/two.php?action=mywalletadd";
             Request request = new Request.Builder()
                     .url(url)
                     .post(body)
@@ -468,7 +468,7 @@ public class walletwithme extends AppCompatActivity {
 
             // String ridu = URLEncoder.encode(rid,"utf-8");
 
-            // String url=  "https://corellia.co.ke/rider/one.php?action=getdr";
+            // String url=  "https://www.psklok.com/klok/one.php?action=getdr";
 
 
 
@@ -589,7 +589,7 @@ public class walletwithme extends AppCompatActivity {
 
             RequestBody body = RequestBody.create(json, JSON); // new
             // RequestBody body = RequestBody.create(JSON, json); // old
-            String url="https://corellia.co.ke/rider/two.php?action=mywalletrem";
+            String url="https://www.psklok.com/klok/two.php?action=mywalletrem";
             Request request = new Request.Builder()
                     .url(url)
                     .post(body)
@@ -597,7 +597,7 @@ public class walletwithme extends AppCompatActivity {
 
             // String ridu = URLEncoder.encode(rid,"utf-8");
 
-            // String url=  "https://corellia.co.ke/rider/one.php?action=getdr";
+            // String url=  "https://www.psklok.com/klok/one.php?action=getdr";
 
 
 

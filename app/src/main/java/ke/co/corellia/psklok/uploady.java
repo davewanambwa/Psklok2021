@@ -60,7 +60,7 @@ public class uploady extends AppCompatActivity {
 
 
         /************* Php script path ****************/
-        upLoadServerUri = "https://corellia.co.ke/rider/fileUpload.php";
+        upLoadServerUri = "https://www.psklok.com/klok/fileUpload.php";
 
         uploadButton.setOnClickListener(new View.OnClickListener() {
             @Override

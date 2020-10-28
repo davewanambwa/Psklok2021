@@ -128,7 +128,7 @@ Context context;
             requestPermissions(permissions, 200);
         }
 
-        webView.loadUrl("https://corellia.co.ke/rider/uploads/");
+        webView.loadUrl("https://www.psklok.com/klok/uploads/");
        // setContentView(webView);
     }
 

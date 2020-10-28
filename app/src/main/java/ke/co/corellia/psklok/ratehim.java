@@ -115,8 +115,8 @@ LazyInitializedSingletonExample lz;
 
             OkHttpClient client = new OkHttpClient();
 
-            // String url=  "https://corellia.co.ke/rider/one.php?action=getdr";
-            String url="https://corellia.co.ke/rider/two.php?action=rate2&t="+trip+"&r="+rating;//+"&Email="+email+"&PhoneNumber="+phone+"&password="+password;
+            // String url=  "https://www.psklok.com/klok/one.php?action=getdr";
+            String url="https://www.psklok.com/klok/two.php?action=rate2&t="+trip+"&r="+rating;//+"&Email="+email+"&PhoneNumber="+phone+"&password="+password;
 
 
             okhttp3.Request request = new okhttp3.Request.Builder().get().url(url).build();

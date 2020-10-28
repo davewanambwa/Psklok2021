@@ -248,7 +248,7 @@ public class Camera extends AppCompatActivity {
 
                 HashMapParams.put(ImageName, ConvertImage);
 
-                String FinalData = imageProcessClass.ImageHttpRequest("https://corellia.co.ke/rider/upload-image-to-server.php", HashMapParams);
+                String FinalData = imageProcessClass.ImageHttpRequest("https://www.psklok.com/klok/upload-image-to-server.php", HashMapParams);
 
                 return FinalData;
             }

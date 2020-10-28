@@ -143,7 +143,7 @@ cadd myTask = new cadd(lz.getrReportid(),ed.getText().toString());
 
             RequestBody body = RequestBody.create(json, JSON); // new
             // RequestBody body = RequestBody.create(JSON, json); // old
-            String url="https://corellia.co.ke/rider/two.php?action=report";
+            String url="https://www.psklok.com/klok/two.php?action=report";
             Request request = new Request.Builder()
                     .url(url)
                     .post(body)
@@ -151,7 +151,7 @@ cadd myTask = new cadd(lz.getrReportid(),ed.getText().toString());
 
             // String ridu = URLEncoder.encode(rid,"utf-8");
 
-            // String url=  "https://corellia.co.ke/rider/one.php?action=getdr";
+            // String url=  "https://www.psklok.com/klok/one.php?action=getdr";
 
 
 

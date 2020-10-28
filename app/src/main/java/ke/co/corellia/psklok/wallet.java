@@ -205,8 +205,8 @@ btn.setOnClickListener(new View.OnClickListener() {
 
             OkHttpClient client = new OkHttpClient();
 
-            // String url=  "https://corellia.co.ke/rider/one.php?action=getdr";
-            String url="https://corellia.co.ke/rider/one.php?action=wallet&id="+customer;
+            // String url=  "https://www.psklok.com/klok/one.php?action=getdr";
+            String url="https://www.psklok.com/klok/one.php?action=wallet&id="+customer;
 
 
             okhttp3.Request request = new okhttp3.Request.Builder().get().url(url).build();
@@ -297,8 +297,8 @@ btn.setOnClickListener(new View.OnClickListener() {
 
             OkHttpClient client = new OkHttpClient();
 
-            // String url=  "https://corellia.co.ke/rider/one.php?action=getdr";
-            String url="https://corellia.co.ke/rider/one.php?action=walletmod&id="+customer+"&amount="+amount;
+            // String url=  "https://www.psklok.com/klok/one.php?action=getdr";
+            String url="https://www.psklok.com/klok/one.php?action=walletmod&id="+customer+"&amount="+amount;
 
 
             okhttp3.Request request = new okhttp3.Request.Builder().get().url(url).build();
