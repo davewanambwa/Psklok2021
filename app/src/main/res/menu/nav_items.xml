@@ -14,16 +14,16 @@
             android:title="My Profile" />
         <item
             android:id="@+id/triphistory"
-            android:icon="@drawable/bikeo"
+            android:icon="@drawable/mprofile"
             android:title="Trip History" />
 
         <item
             android:id="@+id/wallet"
-            android:icon="@drawable/mwallet"
+            android:icon="@drawable/shareo"
             android:title="Share Wallet" />
         <item
             android:id="@+id/sharedwithme"
-            android:icon="@drawable/mwallet"
+            android:icon="@drawable/shareo"
             android:title="Wallet shared with me" />
         <item
             android:id="@+id/mybox"
@@ -41,7 +41,10 @@
             android:id="@+id/onpoint"
             android:icon="@drawable/profile"
             android:title="Points Earned" />
-
+        <item
+            android:id="@+id/mylocation"
+            android:icon="@drawable/profile"
+            android:title="Delivery Point" />
 
 
 

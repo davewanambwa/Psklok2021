@@ -148,7 +148,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="12dp"
+                android:padding="10dp"
 
                 android:orientation="horizontal">
 
@@ -160,14 +160,14 @@
                     android:layout_weight="2"
                     android:background="@drawable/yellowbg"
                     android:drawableLeft="@drawable/iconfinder_phone_"
-                    android:padding="10dp"
+                    android:padding="9dp"
                     android:text="Call" />
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/icon_material_face"
+                    android:src="@drawable/menvelope"
                     android:layout_marginRight="5dp"
-
+                    android:id="@+id/img"
                     android:layout_weight="1"/>
 
                 <androidx.appcompat.widget.AppCompatTextView
@@ -180,7 +180,7 @@
                     android:background="@drawable/yellowbg"
                     android:enabled="false"
 
-                    android:padding="14dp"
+                    android:padding="9dp"
                     android:text="RATING 3.6"
                     android:textAlignment="center"
                     android:textColor="#070707" />

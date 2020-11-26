@@ -39,6 +39,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageSwitcher;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -321,6 +322,16 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
         Button btnokdriver = findViewById(R.id.btnokdriver);
+
+        ImageView img = findViewById(R.id.img);
+
+        img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2b = new Intent(MainActivity.this, triptext.class);
+                startActivity(intent2b);// Activity is started with requestCode 2btn
+            }
+        });
 
 
         btnokdriver.setOnClickListener(new View.OnClickListener() {
@@ -1320,11 +1331,19 @@ autocompleteFragment2.setCountry(CountryCode);
                     Intent intent2 = new Intent(MainActivity.this, sharepromo.class);
                     startActivity(intent2);// Activity is started with requestCode 2btn
 
-                } else if (itemId == R.id.Myprofile) {
+                }
+                else if (itemId == R.id.Myprofile) {
                     Intent intent2 = new Intent(MainActivity.this, myprof.class);
                     startActivity(intent2);// Activity is started with requestCode 2btn
 
-                } else if (itemId == R.id.ex) {
+                }
+                else if (itemId == R.id.mylocation) {
+                    Intent intent2 = new Intent(MainActivity.this, CameraLocation.class);
+                    startActivity(intent2);// Activity is started with requestCode 2btn
+
+                }
+
+                else if (itemId == R.id.ex) {
                     finish();
                 }
 // display a toast message with menu item's title

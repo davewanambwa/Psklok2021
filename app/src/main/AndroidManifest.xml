@@ -24,6 +24,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Camera"  android:screenOrientation="portrait"></activity>
+        <activity android:name=".CameraLocation"  android:screenOrientation="portrait"></activity>
         <activity
             android:name=".webwallet"
             android:screenOrientation="portrait"
@@ -132,7 +133,12 @@
         <activity
             android:name=".Logup"
             android:screenOrientation="portrait" />
-
+        <activity
+            android:name=".triptext"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".replymsg"
+            android:screenOrientation="portrait" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
